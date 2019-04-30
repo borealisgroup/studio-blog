@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@borealisgroup/eslint-config": "^1.5.0",
+    "@borealisgroup/stylelint-config": "^1.2.4",
     "prettier": "^1.17.0"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
