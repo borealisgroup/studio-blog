@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "Borealis digital studio blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "The repo containing the Borealis digital studio blogposts",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Lewis Fidlers <lewis.fidlers@borealisgroup.com>",
   "dependencies": {
     "gatsby": "^2.3.33",
     "gatsby-image": "^2.0.40",
@@ -37,13 +34,10 @@
   },
   "devDependencies": {
     "@borealisgroup/eslint-config": "^1.5.0",
-    "@borealisgroup/stylelint-config": "^1.2.4",
-    "prettier": "^1.17.0"
+    "@borealisgroup/stylelint-config": "^1.2.4"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -53,7 +47,6 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
