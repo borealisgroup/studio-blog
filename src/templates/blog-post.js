@@ -38,7 +38,10 @@ function BlogPostTemplate(props) {
           marginBottom: rhythm(1),
         }}
       />
-      <Bio />
+      <Bio
+        author={post.frontmatter.author}
+        authorSocial={post.frontmatter.authorSocial}
+      />
 
       <ul
         style={{
@@ -75,7 +78,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
+        company
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -86,6 +89,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
+        authorSocial
         description
       }
     }

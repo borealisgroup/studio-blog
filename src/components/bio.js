@@ -11,12 +11,13 @@ import Image from 'gatsby-image';
 
 import { rhythm } from '../utils/typography';
 
-function Bio() {
+function Bio(props) {
+  const { author, authorSocial } = props;
   return (
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata;
+        const { company, social } = data.site.siteMetadata;
         return (
           <div
             style={{
@@ -26,7 +27,7 @@ function Bio() {
           >
             <Image
               fixed={data.avatar.childImageSharp.fixed}
-              alt={author}
+              alt={company}
               style={{
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
@@ -38,7 +39,8 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong>
+              Written by <a href={`${authorSocial}`}>{author}</a> for the{' '}
+              <strong>{company}</strong>
               {` `}
               <br />
               Have a look at our {` `}
@@ -64,9 +66,9 @@ const bioQuery = graphql`
     }
     site {
       siteMetadata {
-        author
+        company
         social {
-          twitter
+          github
         }
       }
     }
