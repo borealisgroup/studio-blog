@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    title: `Borealis Digital Studio blog`,
+    author: `Borealis Digital Studio`,
+    description: `A collection of blogposts written by our employees`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `http://www.twitter.com`,
+      github: `https://github.com/borealisgroup/borealis-js`,
     },
   },
   plugins: [
@@ -50,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
     `gatsby-plugin-feed`,
@@ -75,4 +76,4 @@ module.exports = {
       },
     },
   ],
-}
+};
