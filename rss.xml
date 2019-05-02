@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Borealis Digital Studio blog]]></title><description><![CDATA[A collection of blogposts written by our employees]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Thu, 02 May 2019 14:05:18 GMT</lastBuildDate><item><title><![CDATA[Setting up a gatsby blog]]></title><description><![CDATA[RemarkAt time of writing node 12.0 was just released but had some issues with dependancies, so I switched to 11.4.0Prerequisitesnvm (node…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</guid><pubDate>Mon, 29 Apr 2019 22:40:32 GMT</pubDate><content:encoded>&lt;h2&gt;Remark&lt;/h2&gt;
+&lt;p&gt;At time of writing node 12.0 was just released but had some issues with dependancies, so I switched to 11.4.0&lt;/p&gt;
+&lt;h2&gt;Prerequisites&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;nvm (node version manager) or node installed&lt;/li&gt;
+&lt;li&gt;Make sure you have git installed.&lt;/li&gt;
+&lt;li&gt;homebrew: &lt;a href=&quot;https://docs.brew.sh/Installation&quot;&gt;https://docs.brew.sh/Installation&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;chocolatey: &lt;a href=&quot;https://chocolatey.org/&quot;&gt;https://chocolatey.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Install nvm&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;verify install with nvm -v&lt;/p&gt;
+&lt;p&gt;user nvm the install your desired node version:&lt;/p&gt;
+&lt;p&gt;nvm install v11.4.0&lt;/p&gt;
+&lt;p&gt;in the directory you would like to initialize youre blog run nvm use 11.4.0&lt;/p&gt;
+&lt;p&gt;Install node brew install node / choco install node&lt;/p&gt;
+&lt;p&gt;Verify using node —version -&gt; 11.4.&lt;/p&gt;
+&lt;h2&gt;Setup&lt;/h2&gt;
+&lt;p&gt;Node comes with it’s own package manager which is conveniently called npm (node package manager)&lt;/p&gt;
+&lt;p&gt;Gatsby comes with a nice cli. install it using:
+&lt;code class=&quot;language-text&quot;&gt;npm install -g gatsby-cli&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;run &lt;code class=&quot;language-text&quot;&gt;gatsby -v&lt;/code&gt; to verify the installation ath the time of writing: 2.5.12.&lt;/p&gt;
+&lt;p&gt;Next up we’ll setup a new gatsby site using through the cli, using a &lt;code class=&quot;language-text&quot;&gt;Gatsby starter&lt;/code&gt; The one we’ll use is: &lt;a href=&quot;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&lt;/a&gt; Which is a basic one but will do what we need.&lt;/p&gt;
+&lt;p&gt;If you’d like another one have a look at: &lt;a href=&quot;https://www.gatsbyjs.org/starters/?s=blog&amp;#x26;v=2&quot;&gt;https://www.gatsbyjs.org/starters/?s=blog&amp;#x26;v=2&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;/span&gt;
+  puts &lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
