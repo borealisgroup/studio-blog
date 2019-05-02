@@ -34,7 +34,8 @@
   },
   "devDependencies": {
     "@borealisgroup/eslint-config": "^1.5.0",
-    "@borealisgroup/stylelint-config": "^1.2.4"
+    "@borealisgroup/stylelint-config": "^1.2.4",
+    "gh-pages": "^2.0.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -51,6 +52,7 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
