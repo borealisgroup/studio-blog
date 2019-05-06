@@ -15,7 +15,7 @@
   },
   "name": "studio-blog",
   "scripts": {
-   "heroku-postbuild": "gatsby build"
+    "heroku-postbuild": "gatsby build"
   },
   "stack": "heroku-18"
 }
