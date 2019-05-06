@@ -3,9 +3,8 @@
 
   ],
   "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    }
+    { "url": "heroku/nodejs" },
+    { "url": "https://github.com/heroku/heroku-buildpack-static" }
   ],
   "description": "Setup the blog as a pr app.",
   "env": {
@@ -14,7 +13,7 @@
   },
   "name": "studio-blog",
   "scripts": {
-   "heroku-postbuild": "gatsby build"
+    "heroku-postbuild": "gatsby build"
   },
   "stack": "heroku-18"
 }
