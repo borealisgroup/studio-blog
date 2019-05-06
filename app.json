@@ -1,0 +1,19 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "description": "Setup the blog as a pr app.",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "studio-blog",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
