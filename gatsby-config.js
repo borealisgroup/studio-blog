@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: '/studio-blog',
   siteMetadata: {
     title: `Borealis Digital Studio blog`,
     company: `Borealis Digital Studio`,
