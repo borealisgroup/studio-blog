@@ -12,7 +12,7 @@ A Very rudimentary pipeline has been setup though [Heroku](https://www.heroku.co
 ### Examples
 A simple example about [osmium](/src/examples/blog-post.md) is included in the repo, it contains different markdown elements so you can have a look at what's possible. For more detailed examples please have a look at one if our our blogposts or check out [GitHub's guide to markdown](https://guides.github.com/features/mastering-markdown/).
 
-Currently blog posts are written in markdown and picked up from the [blog folder](/tree/development/content/blog/) this should make it accessible for everyone. You can of course integrate with different data sources or write in any format you want.
+Currently blog posts are written in markdown and picked up from the [blog folder](/content/blog/) this should make it accessible for everyone. You can of course integrate with different data sources or write in any format you want.
 
 ### Writing
 
@@ -29,7 +29,7 @@ Of course any other editor will do, and adding posts directly from GitHub is als
 
 #### Get started
 
-The first step would be to create a new folder inside [blog folder](/tree/development/content/blog/), This folder will contain your post and any images you'd like to display. This way we can keep everything somewhat together.
+The first step would be to create a new folder inside [blog folder](/content/blog/), This folder will contain your post and any images you'd like to display. This way we can keep everything somewhat together.
 
 Next up, my advise would be to copy any of the existing blog posts if they match what you had in mind or copy the example blog post about [osmium](/src/examples/blog-post.md).
 
