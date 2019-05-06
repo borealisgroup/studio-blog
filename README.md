@@ -51,17 +51,19 @@ As a final step you can finally start writing by editing the file you just creat
 Our pipeline is as follows
 
  - Create a pull request to `master`
- - [ ] Ci will deploy a very small app for this so we can preview it, or you can link people to it.
+ - Ci will deploy a very small app for this so we can preview it, or you can link people to it. (currently this is a pr app on heroku)
  - Once finished have someone proofread and merge into `master`
- - [ ] Ci will deploy it, this is done to the `gh-pages` branch
- - [ ] if all is well the [blog](https://blog.borealisdigitalstudio.com) is now updated with your post
- - [ ] CROSSPOST TO ALL THE SOCIAL MEDIA! (cue "X all the Y meme")
+ - TODO: Ci will deploy it, this is done to the `gh-pages` branch
+ - TODO: if all is well the [blog](https://blog.borealisdigitalstudio.com) is now updated with your post
+ - TODO: CROSSPOST TO ALL THE SOCIAL MEDIA! (cue "X all the Y meme")
 
-For manual deployment, which we prefer not to happen of course run the following command
+Deployment to the gh-pages branch can be triggered using:
 
 ```bash
 npm run deploy
 ```
+
+This deploys to GitHub pages which has been setup to resolve to our own domain.
 
 ## Footnote
 
