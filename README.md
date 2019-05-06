@@ -19,11 +19,10 @@ Currently blog posts are written in markdown and picked up from the [blog folder
 #### editors
 If you'd like a visual mardown editor have a look at these:
 
-| Os      | Editors                                    |
-|---------|--------------------------------------------|
-| Mac     | - [Macdown](https://macdown.uranusjr.com/) |
-| Windows | - [Typora](https://typora.io/)             |
-|         | - [Caret](https://caret.io/)               |
+| Os      | Editors                                                  |
+|---------|----------------------------------------------------------|
+| Mac     | [Macdown](https://macdown.uranusjr.com/)                 |
+| Windows | [Typora](https://typora.io/), [Caret](https://caret.io/) |
 
 Of course any other editor will do, and adding posts directly from GitHub is also an option
 
