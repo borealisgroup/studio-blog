@@ -1,7 +1,7 @@
 {
-  "engines": "{
+  "engines": {
     "node": "11.4.0"
-  }",
+  },
   "name": "BorealisDigitalStudioBlog",
   "private": true,
   "description": "The repo containing the Borealis digital studio blogposts",
