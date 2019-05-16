@@ -41,6 +41,7 @@ function BlogPostTemplate(props) {
       <Bio
         author={post.frontmatter.author}
         authorSocial={post.frontmatter.authorSocial}
+        authorAvatar={post.frontmatter.authorAvatar}
       />
 
       <ul
@@ -89,6 +90,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         author
+        authorAvatar
+        authorEmail
         authorSocial
         description
       }
