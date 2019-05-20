@@ -8,10 +8,8 @@ authorSocial: "https://www.github.com/lewis-fidlers"
 description: Setup a Gatsby blog using mardown files as a source
 ---
 
-## Prerequisites
-* [Git](https://git-scm.com/)
-
 ## Let's get started
+Before we start please make sure you have [Git](https://git-scm.com/) installed.
 ### Install nvm
 > You can skip this if you already have a working node installation, however I would still recommend using it.
 
