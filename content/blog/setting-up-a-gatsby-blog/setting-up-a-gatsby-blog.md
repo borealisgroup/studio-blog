@@ -45,6 +45,9 @@ nvm current # Show the node version in use (node -v should return the same)
 ## Setup Gatsby
 Gatsby comes with a nice cli, install it using:
 
+```js
+install -g gatsby-cli
+```
 run `gatsby -v` to verify the installation at the time of writing: 2.5.12.
 
 ### Choose and install a starter
@@ -120,7 +123,7 @@ export const pagequery = graphql`
 
 Our goal is to add some info about the author to every blogpost.
 
-1. Provide data in the blogpost
+#### 1. Provide data in the blogpost  
 This step is rather simple, we just add it at the top of our blogpost.
 
 eg:
@@ -136,7 +139,7 @@ authorSocial: "https://www.github.com/lewis-fidlers"
 
 That's it, the data will now be available for us to query.
 
-2. Retrieve the data through your adapted query
+#### 2. Retrieve the data through your adapted query
 Navigate to the [graphical interface](http://localhost:8000/___graphql), here we enter our updated query
 
 ```js
@@ -176,11 +179,22 @@ For us it looks like this, of course you need to fill this in using your own `/f
 
 If all went well the result will now also return your author and the social link.
 
-3. Display it on the blog post
+#### 3. Display it on the blog post
 
 For our last step we'd like to update The data displayed int he blog post.
 
 Open up the `src/templates/blog-post.js` file, this file is "conveniently" a template for every post we make from here on. At the bottom expand the query so it also queries our newly added data, as we did in the previous step.
+
+The frontmatter part of the query should now look like this:
+```js
+frontmatter {
+  date(formatString: "MMMM DD, YYYY")
+  title
+  description
+  author
+  authorSocial
+}
+```
 
 Now move up in the file and change the Bio component.
 
