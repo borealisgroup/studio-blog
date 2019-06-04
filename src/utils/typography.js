@@ -14,29 +14,29 @@ Wordpress2016.overrideThemeStyles = () => {
 delete Wordpress2016.googleFonts;
 
 const typography = new Typography({
-  title: 'Wordpress Theme 2016',
+  title: 'Borealis Blog Theme',
   baseFontSize: '16px',
   baseLineHeight: 1.75,
   scaleRatio: 5 / 2,
   googleFonts: [
     {
-      name: 'Montserrat',
-      styles: ['700'],
+      name: 'Roboto',
+      styles: ['400', '400i', '700', '700i', '900', '900i'],
     },
     {
-      name: 'Merriweather',
+      name: 'Arial',
       styles: ['400', '400i', '700', '700i', '900', '900i'],
     },
   ],
-  headerFontFamily: ['Merriweather', 'Georgia', 'serif'],
-  bodyFontFamily: ['Merriweather', 'Georgia', 'serif'],
+  headerFontFamily: ['Roboto', 'Arial'],
+  bodyFontFamily: ['Arial', 'Roboto'],
   bodyColor: 'hsla(0,0%,0%,0.9)',
   headerWeight: 900,
   bodyWeight: 400,
   boldWeight: 700,
   overrideStyles: ({ adjustFontSizeTo, scale, rhythm }, options) => ({
     h1: {
-      fontFamily: ['Montserrat', 'sans-serif'].join(','),
+      fontFamily: ['Roboto', 'Arial'].join(','),
     },
     blockquote: {
       ...scale(1 / 5),

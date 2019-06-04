@@ -5,7 +5,7 @@ module.exports = {
     description: `A collection of blogposts written by our employees`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      github: `https://github.com/borealisgroup/borealis-js`,
+      github: `https://github.com/borealisgroup`,
     },
   },
   plugins: [
