@@ -62,12 +62,12 @@ If you want the blog in a new folder replace the `.` with the folder name.
 
 ### verify the installation
 
-If all went well your blog has been setup, however it is not running yet. Run `gatsby develop` in your terminal. Now visit `http://localhost:8000` and you should be able to see your bright and shiny new blog
+If all went well your blog has been set up, however it is not running yet. Run `gatsby develop` in your terminal. Now visit `http://localhost:8000` and you should be able to see your bright and shiny new blog
 
 ## Content
 Of course a blog needs content, in the current setup content is retrieved through markdown files in the `/content/blog` folder so have a look at these if you want some examples.
 
-Markdown however does not have to be the only way of adding content, more on this later.
+Markdown however does not have to be the only way of adding content, gatsby allows for you to integrate with multiple data sources. We'll focus on markdown for now though.
 
 ### Adding a new blogpost
 To add a new post simply add a new folder which contains you post eg: `/content/blog/dummy-post/dummy-post.md`
@@ -86,7 +86,7 @@ This data will be displayed somewhere on the blogpost.
 Below the data you can just start writing your blog as you would any mardown file.
 
 ### Altering data
-Since everyone hase a slightly different use case, the current data provided might not be enough. Let's change it a bit so it matches what we want to achieve. For our exampel we would like multiple people to write blogposts, it would be nice to have everyone write them in their own name.
+Since everyone has a slightly different use case, the current data provided might not be enough. Let's change it a bit so it matches what we want to achieve. For our example we would like multiple people to write blogposts, it would be nice to have everyone write them in their own name.
 
 #### Graphql
 We retrieve data using [graphql](https://graphql.org/), to test queries you can use the [graphical interface](http://localhost:8000/___graphql).
@@ -171,7 +171,7 @@ This query requires a slug to find the actual post, so don't forget to enter thi
 For us it looks like this, of course you need to fill this in using your own `/folder/filename.md`
 ```
 {
-  "slug": "/setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/"
+  "slug": "/dummy-post/dummy-post/"
 }
 ```
 
