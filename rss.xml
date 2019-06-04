@@ -1,27 +1,143 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Borealis Digital Studio blog]]></title><description><![CDATA[A collection of blogposts written by our employees]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 06 May 2019 07:57:34 GMT</lastBuildDate><item><title><![CDATA[Setting up a gatsby blog]]></title><description><![CDATA[RemarkAt time of writing node 12.0 was just released but had some issues with dependancies, so I switched to 11.4.0Prerequisitesnvm (node…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</guid><pubDate>Mon, 29 Apr 2019 22:40:32 GMT</pubDate><content:encoded>&lt;h2&gt;Remark&lt;/h2&gt;
-&lt;p&gt;At time of writing node 12.0 was just released but had some issues with dependancies, so I switched to 11.4.0&lt;/p&gt;
-&lt;h2&gt;Prerequisites&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;nvm (node version manager) or node installed&lt;/li&gt;
-&lt;li&gt;Make sure you have git installed.&lt;/li&gt;
-&lt;li&gt;homebrew: &lt;a href=&quot;https://docs.brew.sh/Installation&quot;&gt;https://docs.brew.sh/Installation&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;chocolatey: &lt;a href=&quot;https://chocolatey.org/&quot;&gt;https://chocolatey.org/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Install nvm&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;verify install with nvm -v&lt;/p&gt;
-&lt;p&gt;user nvm the install your desired node version:&lt;/p&gt;
-&lt;p&gt;nvm install v11.4.0&lt;/p&gt;
-&lt;p&gt;in the directory you would like to initialize youre blog run nvm use 11.4.0&lt;/p&gt;
-&lt;p&gt;Install node brew install node / choco install node&lt;/p&gt;
-&lt;p&gt;Verify using node —version -&gt; 11.4.&lt;/p&gt;
-&lt;h2&gt;Setup&lt;/h2&gt;
-&lt;p&gt;Node comes with it’s own package manager which is conveniently called npm (node package manager)&lt;/p&gt;
-&lt;p&gt;Gatsby comes with a nice cli. install it using:
-&lt;code class=&quot;language-text&quot;&gt;npm install -g gatsby-cli&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;run &lt;code class=&quot;language-text&quot;&gt;gatsby -v&lt;/code&gt; to verify the installation ath the time of writing: 2.5.12.&lt;/p&gt;
-&lt;p&gt;Next up we’ll setup a new gatsby site using through the cli, using a &lt;code class=&quot;language-text&quot;&gt;Gatsby starter&lt;/code&gt; The one we’ll use is: &lt;a href=&quot;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&lt;/a&gt; Which is a basic one but will do what we need.&lt;/p&gt;
-&lt;p&gt;If you’d like another one have a look at: &lt;a href=&quot;https://www.gatsbyjs.org/starters/?s=blog&amp;#x26;v=2&quot;&gt;https://www.gatsbyjs.org/starters/?s=blog&amp;#x26;v=2&lt;/a&gt;&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;ruby&quot;&gt;&lt;pre class=&quot;language-ruby&quot;&gt;&lt;code class=&quot;language-ruby&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;token method-definition&quot;&gt;&lt;span class=&quot;token function&quot;&gt;hello&lt;/span&gt;&lt;/span&gt;
-  puts &lt;span class=&quot;token string&quot;&gt;&quot;hello&quot;&lt;/span&gt;
-&lt;span class=&quot;token keyword&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Borealis Digital Studio blog]]></title><description><![CDATA[A collection of blogposts written by our employees]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 04 Jun 2019 11:14:28 GMT</lastBuildDate><item><title><![CDATA[Setting up a gatsby blog]]></title><description><![CDATA[Let’s get startedBefore we start please make sure you have Git installed.Install nvmYou can skip this if you already have a working node…]]></description><link>https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//setting-up-a-gatsby-blog/setting-up-a-gatsby-blog/</guid><pubDate>Tue, 30 Apr 2019 22:40:32 GMT</pubDate><content:encoded>&lt;h2&gt;Let’s get started&lt;/h2&gt;
+&lt;p&gt;Before we start please make sure you have &lt;a href=&quot;https://git-scm.com/&quot;&gt;Git&lt;/a&gt; installed.&lt;/p&gt;
+&lt;h3&gt;Install nvm&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can skip this if you already have a working node installation, however I would still recommend using it.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is a node version manager. It will allow you to install different versions of node on your machine and set the version per project you are working on.&lt;/p&gt;
+&lt;p&gt;On mac/linux run the following command in your terminal&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;&lt;span class=&quot;token function&quot;&gt;curl&lt;/span&gt; -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;bash&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;On Windows have a look at &lt;a href=&quot;https://github.com/coreybutler/nvm-windows&quot;&gt;nvm-windows&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Pick a location for your blog, we’ll put it in &lt;code class=&quot;language-text&quot;&gt;~/git/personal/blog&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Next up use nvm to install the latest, or a desired node version:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; 12.2.0 &lt;span class=&quot;token comment&quot;&gt;# This was the latest at the time of writing&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can verify the node version for the current directory with &lt;code class=&quot;language-text&quot;&gt;nvm current&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Other useful nvm commands&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;shell&quot;&gt;&lt;pre class=&quot;language-shell&quot;&gt;&lt;code class=&quot;language-shell&quot;&gt;nvm &lt;span class=&quot;token function&quot;&gt;ls&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;# Versions installed on your system&lt;/span&gt;
+nvm ls-remote &lt;span class=&quot;token comment&quot;&gt;# All versions available for installation&lt;/span&gt;
+nvm &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; VERSON_OF_NODE &lt;span class=&quot;token comment&quot;&gt;# Install a specific version of node&lt;/span&gt;
+nvm use VERSON_OF_NODE &lt;span class=&quot;token comment&quot;&gt;# Set the node version for the folder you&apos;re in&lt;/span&gt;
+nvm current &lt;span class=&quot;token comment&quot;&gt;# Show the node version in use (node -v should return the same)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Setup Gatsby&lt;/h2&gt;
+&lt;p&gt;Gatsby comes with a nice cli, install it using:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;install &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;g gatsby&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;run &lt;code class=&quot;language-text&quot;&gt;gatsby -v&lt;/code&gt; to verify the installation at the time of writing: 2.5.12.&lt;/p&gt;
+&lt;h3&gt;Choose and install a starter&lt;/h3&gt;
+&lt;p&gt;Now we’ll setup a new gatsby site through the cli, using this &lt;a href=&quot;https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-blog/&quot;&gt;Gatsby starter&lt;/a&gt;, have a look at the &lt;a href=&quot;https://gatsby-starter-blog-demo.netlify.com/&quot;&gt;Preview&lt;/a&gt; before you use it.&lt;/p&gt;
+&lt;p&gt;If you’d like another one have a look at &lt;a href=&quot;https://www.gatsbyjs.org/starters/?s=blog&amp;#x26;v=2&quot;&gt;this list of starters&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After choosing a starter run the following command, this will initialize the blog inside the directory you made earlier.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby new . https://github.com/gatsbyjs/gatsby-starter-blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If you want the blog in a new folder replace the &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt; with the folder name.&lt;/p&gt;
+&lt;h3&gt;verify the installation&lt;/h3&gt;
+&lt;p&gt;If all went well your blog has been set up, however it is not running yet. Run &lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt; in your terminal. Now visit &lt;code class=&quot;language-text&quot;&gt;http://localhost:8000&lt;/code&gt; and you should be able to see your bright and shiny new blog&lt;/p&gt;
+&lt;h2&gt;Content&lt;/h2&gt;
+&lt;p&gt;Of course a blog needs content, in the current setup content is retrieved through markdown files in the &lt;code class=&quot;language-text&quot;&gt;/content/blog&lt;/code&gt; folder so have a look at these if you want some examples.&lt;/p&gt;
+&lt;p&gt;Markdown however does not have to be the only way of adding content, gatsby allows for you to integrate with multiple data sources. We’ll focus on markdown for now though.&lt;/p&gt;
+&lt;h3&gt;Adding a new blogpost&lt;/h3&gt;
+&lt;p&gt;To add a new post simply add a new folder which contains you post eg: &lt;code class=&quot;language-text&quot;&gt;/content/blog/dummy-post/dummy-post.md&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;At the start of the post insert some metadata&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; You&apos;re post tile
+&lt;span class=&quot;token key atrule&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date you are writing the post eg&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2019-05-17T22:40:32.169Z&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; A small description which will be displayed in the post overview
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This data will be displayed somewhere on the blogpost.&lt;/p&gt;
+&lt;p&gt;Below the data you can just start writing your blog as you would any mardown file.&lt;/p&gt;
+&lt;h3&gt;Altering data&lt;/h3&gt;
+&lt;p&gt;Since everyone has a slightly different use case, the current data provided might not be enough. Let’s change it a bit so it matches what we want to achieve. For our example we would like multiple people to write blogposts, it would be nice to have everyone write them in their own name.&lt;/p&gt;
+&lt;h4&gt;Graphql&lt;/h4&gt;
+&lt;p&gt;We retrieve data using &lt;a href=&quot;https://graphql.org/&quot;&gt;graphql&lt;/a&gt;, to test queries you can use the &lt;a href=&quot;http://localhost:8000/___graphql&quot;&gt;graphical interface&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;An example can be found on the &lt;code class=&quot;language-text&quot;&gt;/pages/index.js&lt;/code&gt; file At the bottom it has a query which should look like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pagequery &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; graphql&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token string&quot;&gt;`
+  query {
+    site {
+      sitemetadata {
+        title
+      }
+    }
+    allmarkdownremark(sort: { fields: [frontmatter___date], order: desc }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatstring: &quot;mmmm dd, yyyy&quot;)
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Our goal is to add some info about the author to every blogpost.&lt;/p&gt;
+&lt;h4&gt;1. Provide data in the blogpost&lt;/h4&gt;
+&lt;p&gt;This step is rather simple, we just add it at the top of our blogpost.&lt;/p&gt;
+&lt;p&gt;eg:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yml&quot;&gt;&lt;pre class=&quot;language-yml&quot;&gt;&lt;code class=&quot;language-yml&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; You&apos;re post tile
+&lt;span class=&quot;token key atrule&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Date you are writing the post eg&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;2019-05-17T22:40:32.169Z&quot;&lt;/span&gt;
+&lt;span class=&quot;token key atrule&quot;&gt;description&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; A small description which will be displayed in the post overview
+&lt;span class=&quot;token key atrule&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; Lewis Fidlers
+&lt;span class=&quot;token key atrule&quot;&gt;authorSocial&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;https://www.github.com/lewis-fidlers&quot;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;---&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That’s it, the data will now be available for us to query.&lt;/p&gt;
+&lt;h4&gt;2. Retrieve the data through your adapted query&lt;/h4&gt;
+&lt;p&gt;Navigate to the &lt;a href=&quot;http://localhost:8000/___graphql&quot;&gt;graphical interface&lt;/a&gt;, here we enter our updated query&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;  query &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    site &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      siteMetadata &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        title
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token function&quot;&gt;allMarkdownRemark&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;sort&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; fields&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;frontmatter___date&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; order&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;DESC&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      edges &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        node &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+          excerpt
+          fields &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            slug
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+          frontmatter &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;formatString&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MMMM DD, YYYY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+            title
+            description
+            author
+            authorAvatar
+          &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This query requires a slug to find the actual post, so don’t forget to enter this in the query variables section.
+For us it looks like this, of course you need to fill this in using your own &lt;code class=&quot;language-text&quot;&gt;/folder/filename.md&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  &amp;quot;slug&amp;quot;: &amp;quot;/dummy-post/dummy-post/&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If all went well the result will now also return your author and the social link.&lt;/p&gt;
+&lt;h4&gt;3. Display it on the blog post&lt;/h4&gt;
+&lt;p&gt;For our last step we’d like to update The data displayed int he blog post.&lt;/p&gt;
+&lt;p&gt;Open up the &lt;code class=&quot;language-text&quot;&gt;src/templates/blog-post.js&lt;/code&gt; file, this file is “conveniently” a template for every post we make from here on. At the bottom expand the query so it also queries our newly added data, as we did in the previous step.&lt;/p&gt;
+&lt;p&gt;The frontmatter part of the query should now look like this:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;frontmatter &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token function&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;formatString&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;MMMM DD, YYYY&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  title
+  description
+  author
+  authorSocial
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now move up in the file and change the Bio component.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Bio&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;author&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;post&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;frontmatter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;author&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token attr-name&quot;&gt;authorSocial&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;post&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;frontmatter&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;authorSocial&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;/&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here we pass in the new data to the bio component&lt;/p&gt;
+&lt;p&gt;For the last step we change the Bio component to display the newly provided info.&lt;/p&gt;
+&lt;p&gt;Open up &lt;code class=&quot;language-text&quot;&gt;src/components/bio.js&lt;/code&gt; and change&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;Written by &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;{author}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; who lives and works in San&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;With something you want yourself, our example is:&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;Written by &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;{`${authorSocial}`}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;{author}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt; for &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;{company}&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;strong&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;That should be about it&lt;/h3&gt;
+&lt;p&gt;This should give you an idea of how to setup and change a blog using &lt;a href=&quot;https://www.gatsbyjs.org/&quot;&gt;Gatsby&lt;/a&gt; and one of their starters. It is however still a pretty brief summary of what’s possible so please check out their docs and play with it.
+Feel free to reach out if you have any questions, or if you find anything anything that’s incorrect.&lt;/p&gt;</content:encoded></item></channel></rss>
