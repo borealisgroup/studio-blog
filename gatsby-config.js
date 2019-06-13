@@ -1,6 +1,10 @@
+const { borealis } = require(`@borealisgroup/theme`);
+
+const title = 'Borealis Digital Studio blog';
+
 module.exports = {
   siteMetadata: {
-    title: `Borealis Digital Studio blog`,
+    title,
     company: `Borealis Digital Studio`,
     description: `A collection of blogposts written by our employees`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
@@ -86,7 +90,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        icon: 'src/images/favicon.png',
         // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
@@ -94,13 +97,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: title,
+        short_name: `Studio blog`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        theme_color: borealis.colors.darkblue[5],
+        display: `standalone`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
