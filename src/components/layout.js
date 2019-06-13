@@ -3,6 +3,28 @@ import { Link } from 'gatsby';
 
 import { rhythm, scale } from '../utils/typography';
 
+const Logo = () => (
+  <Link
+    style={{
+      boxShadow: `none`,
+      textDecoration: `none`,
+      color: `inherit`,
+      display: 'block',
+    }}
+    to="/"
+  >
+    <img
+      src="/images/logo.svg"
+      alt="Borealis digital studio blog logo"
+      style={{
+        maxWidth: '200px',
+        margin: 'auto',
+        display: 'block',
+      }}
+    />
+  </Link>
+);
+
 function Layout(props) {
   const { location, title, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
@@ -17,16 +39,7 @@ function Layout(props) {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
+        <Logo />
       </h1>
     );
   } else {
@@ -37,16 +50,7 @@ function Layout(props) {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
+        <Logo />
       </h3>
     );
   }
