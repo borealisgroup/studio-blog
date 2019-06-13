@@ -2,6 +2,7 @@ import gray from 'gray-percentage';
 import { MOBILE_MEDIA_QUERY } from 'typography-breakpoint-constants';
 import Typography from 'typography';
 import Wordpress2016 from 'typography-theme-wordpress-2016';
+import { borealis } from '@borealisgroup/theme';
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
@@ -29,7 +30,7 @@ const typography = new Typography({
     },
   ],
   headerFontFamily: ['Roboto', 'Arial'],
-  bodyFontFamily: ['Arial', 'Roboto'],
+  bodyFontFamily: ['Roboto', 'Arial'],
   bodyColor: 'hsla(0,0%,0%,0.9)',
   headerWeight: 900,
   bodyWeight: 400,
@@ -75,6 +76,7 @@ const typography = new Typography({
     },
     'h1,h2,h3,h4,h5,h6': {
       marginTop: rhythm(2),
+      color: borealis.colors.darkblue[5],
     },
     h4: {
       letterSpacing: '0.140625em',
@@ -85,14 +87,14 @@ const typography = new Typography({
     },
     a: {
       boxShadow: '0 1px 0 0 currentColor',
-      color: '#007acc',
+      color: borealis.colors.lightblue[5],
       textDecoration: 'none',
     },
     'a:hover,a:active': {
       boxShadow: 'none',
     },
     'mark,ins': {
-      background: '#007acc',
+      background: borealis.colors.lightblue[5],
       color: 'white',
       padding: `${rhythm(1 / 16)} ${rhythm(1 / 8)}`,
       textDecoration: 'none',

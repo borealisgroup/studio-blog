@@ -8,6 +8,7 @@
   "version": "0.1.0",
   "author": "Lewis Fidlers <lewis.fidlers@borealisgroup.com>",
   "dependencies": {
+    "@borealisgroup/theme": "^1.7.5",
     "gatsby": "^2.3.33",
     "gatsby-image": "^2.0.40",
     "gatsby-plugin-feed": "^2.1.1",
