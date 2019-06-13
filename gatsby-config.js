@@ -85,6 +85,15 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-matomo',
+      options: {
+        siteId: '1',
+        matomoUrl: 'https://borealisdigitalstudio.matomo.cloud',
+        siteUrl: 'https://blog.borealisdigitalstudio.com',
+        disableCookies: true,
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
