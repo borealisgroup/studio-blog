@@ -87,6 +87,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
+        icon: 'src/images/favicon.png',
         // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
