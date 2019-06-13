@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import LogoSvg from '../images/logo.svg'
 import { rhythm, scale } from '../utils/typography';
 
 const Logo = () => (
@@ -14,7 +14,7 @@ const Logo = () => (
     to="/"
   >
     <img
-      src="/images/logo.svg"
+      src={LogoSvg}
       alt="Borealis digital studio blog logo"
       style={{
         maxWidth: '200px',
