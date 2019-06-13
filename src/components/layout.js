@@ -26,7 +26,7 @@ const Logo = () => (
 );
 
 function Layout(props) {
-  const { location, title, children } = props;
+  const { location, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
