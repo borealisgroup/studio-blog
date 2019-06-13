@@ -1,10 +1,32 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
+import LogoSvg from '../images/logo.svg'
 import { rhythm, scale } from '../utils/typography';
 
+const Logo = () => (
+  <Link
+    style={{
+      boxShadow: `none`,
+      textDecoration: `none`,
+      color: `inherit`,
+      display: 'block',
+    }}
+    to="/"
+  >
+    <img
+      src={LogoSvg}
+      alt="Borealis digital studio blog logo"
+      style={{
+        maxWidth: '200px',
+        margin: 'auto',
+        display: 'block',
+      }}
+    />
+  </Link>
+);
+
 function Layout(props) {
-  const { location, title, children } = props;
+  const { location, children } = props;
   const rootPath = `${__PATH_PREFIX__}/`;
   let header;
 
@@ -17,16 +39,7 @@ function Layout(props) {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
+        <Logo />
       </h1>
     );
   } else {
@@ -37,16 +50,7 @@ function Layout(props) {
           marginTop: 0,
         }}
       >
-        <Link
-          style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `inherit`,
-          }}
-          to="/"
-        >
-          {title}
-        </Link>
+        <Logo />
       </h3>
     );
   }
