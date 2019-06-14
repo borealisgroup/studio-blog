@@ -88,9 +88,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: '1',
-        matomoUrl: 'https://borealisdigitalstudio.matomo.cloud',
-        siteUrl: 'https://blog.borealisdigitalstudio.com',
+        siteId: '2',
+        matomoUrl: 'https://borealisdigitalstudio.matomo.cloud/',
+        siteUrl: 'https://borealisdigitalstudio.com/',
         disableCookies: true,
       },
     },
