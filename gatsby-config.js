@@ -88,20 +88,14 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-matomo',
       options: {
-        siteId: '1',
-        matomoUrl: 'https://borealisdigitalstudio.matomo.cloud',
-        siteUrl: 'https://blog.borealisdigitalstudio.com',
+        siteId: '2',
+        matomoUrl: 'https://borealisdigitalstudio.matomo.cloud/',
+        siteUrl: 'https://borealisdigitalstudio.com/',
         disableCookies: true,
       },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
